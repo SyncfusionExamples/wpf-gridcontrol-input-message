@@ -40,9 +40,6 @@ namespace grid_inputmessage_customization
             grid.Model.ColumnWidths[0] = 115;
             grid.Model.Options.ActivateCurrentCellBehavior = GridCellActivateAction.DblClickOnCell;
             grid.QueryCellInfo += Grid_QueryCellInfo;
-            //grid.Model[1, 2].DataValidationTooltipTemplateKey = "inputTextmessage1";
-            //grid.Model[1, 2].ShowDataValidationTooltip = true;
-            //grid.Model[1, 2].DataValidationTooltip = grid.Model[1, 0].CellValue + ":\nPopulation rate in " + grid.Model[1, 2].ColumnIndex + " is " + grid.Model[1, 2].CellValue;
         }
         private void Grid_QueryCellInfo(object sender, Syncfusion.Windows.Controls.Grid.GridQueryCellInfoEventArgs e)
         {
