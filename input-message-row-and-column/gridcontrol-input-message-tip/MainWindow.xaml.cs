@@ -44,7 +44,7 @@ namespace gridcontrol_input_message_tip
             //Add input message tip for specific row
             for (int i = 1; i <= 4; i++)
             {
-                string comment = grid.Model[1, 0].CellValue + " :\nPopulate rate in " + grid.Model[1, i].ColumnIndex + " is " + grid.Model[1, i].CellValue;
+                string comment = grid.Model[1, 0].CellValue + " :\nPopulation rate in " + grid.Model[1, i].ColumnIndex + " is " + grid.Model[1, i].CellValue;
                 grid.Model[1, i].DataValidationTooltip = comment;
                 grid.Model[1, i].ShowDataValidationTooltip = true;
             }
@@ -52,7 +52,7 @@ namespace gridcontrol_input_message_tip
             //Add input message tip for specific column
             for (int i = 1; i <= 4; i++)
             {
-                string comment = grid.Model[i, 0].CellValue + " :\nPopulate rate in " + grid.Model[i, 2].RowIndex + " is " + grid.Model[i, 2].CellValue;
+                string comment = grid.Model[i, 0].CellValue + " :\nPopulation rate in " + grid.Model[i, 2].RowIndex + " is " + grid.Model[i, 2].CellValue;
                 grid.Model[i, 2].DataValidationTooltip = comment;
                 grid.Model[i, 2].ShowDataValidationTooltip = true;
             }
