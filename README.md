@@ -1,6 +1,6 @@
-# WPF GridControl input message
+# WPF GridControl Input Message
 
-This repository contains the samples that demonstrates various options in input message feature of [WPF GridControl](https://help.syncfusion.com/wpf/gridcontrol/overview).
+This repository contains the samples that demonstrates various options in input message feature of [WPF GridControl](https://www.syncfusion.com/wpf-controls/excel-like-grid).
 
 ### Input Message Tip for row and column
 
@@ -15,6 +15,8 @@ grid.Model.RowStyles[1].ShowDataValidationTooltip = true;
 grid.Model.ColStyles[1].DataValidationTooltip = "Hello";
 grid.Model.ColStyles[1].ShowDataValidationTooltip = true;
 ```
+
+![Set message tip for all the rows and columns](MessageTipForAllRowsAndColumns.png)
 
 An another way to set the input message tip for specific row and column.
 
@@ -35,6 +37,8 @@ for (int i = 1; i <= 4; i++)
     grid.Model[i, 2].ShowDataValidationTooltip = true;
 }
 ```
+
+![Set message tip for specific row and column](MessageTipForSpecificRowsAndColumns.png)
 
 ### Set Input Message Tip using QueryCellInfo event
 
@@ -58,6 +62,8 @@ private void Grid_QueryCellInfo(object sender, Syncfusion.Windows.Controls.Grid.
         e.Style.DataValidationTooltip = e.Style.GridModel[e.Style.RowIndex, 0].CellValue + ": \nPopulation rate in " + e.Style.RowIndex + " is " + e.Style.CellValue.ToString();
 }
 ```
+
+![Defined message tip using QueryCellInfo event](MessageTipUsingQueryCellInfo.png)
 
 ### Customize the Input Message Tip
 
@@ -94,3 +100,5 @@ private void Grid_QueryCellInfo(object sender, Syncfusion.Windows.Controls.Grid.
     }
 }
 ```
+
+![Gridcontrol with customized message tipi](CustomizedMessageTip.png)
